@@ -21,8 +21,7 @@ class Passenger {
 }
 
 class Trip {
-  constructor(name) {
+  constructor() {
     this.id = ++tripId
-    this.name = name
   }
 }
