@@ -3,3 +3,11 @@ class Driver {
     this.name = name
   }
 }
+
+class Passenger {
+
+}
+
+class Trip {
+  
+}
