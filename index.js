@@ -31,8 +31,8 @@ class Passenger {
     this.tripId = trip.id
   }
   trip() {
-    return store.trips.find(function(driver) {
-      return driver.id === this.driverId
+    return store.trips.find(function(trip) {
+      return trip.id === this.tripId
     }.bind(this))
   }
 
