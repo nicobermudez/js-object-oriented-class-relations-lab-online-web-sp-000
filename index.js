@@ -22,7 +22,7 @@ class Passenger {
   }
   trips() {
     return store.trips.filter(function(trip) {
-      return trip.id === this.tripId
+      return trip.passengerId === this.tripId
     }.bind(this))
   }
 
