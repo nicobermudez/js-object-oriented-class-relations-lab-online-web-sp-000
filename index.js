@@ -1,9 +1,9 @@
-let store v= {users: [], passengers: []}
+let store = {users: [], passengers: []}
 class Driver {
   constructor(name) {
     this.name = name
   }
-  
+
 }
 
 class Passenger {
