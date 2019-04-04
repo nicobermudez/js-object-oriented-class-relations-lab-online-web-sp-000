@@ -21,7 +21,7 @@ class Passenger {
     store.passengers.push(this)
   }
   trips() {
-    return store.trips.find(function(trip) {
+    return store.trips.filter(function(trip) {
       return trip.id === this.tripId
     }.bind(this))
   }
