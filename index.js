@@ -22,9 +22,6 @@ class Passenger {
     if(driver) {
       this.driverId = driver.id
     }
-    if(trip) {
-      this.tripId = trip.id
-    }
     store.passengers.push(this)
   }
   setTrips(trips) {
