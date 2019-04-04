@@ -21,7 +21,7 @@ class Passenger {
     store.passengers.push(this)
   }
   drivers() {
-    return this.trips().map(function(driver) {
+    return this.trips().filter(function(driver) {
       return trip.driver()
     })
   }
