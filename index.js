@@ -9,23 +9,16 @@ class Driver {
   constructor(name) {
     this.id = ++driverId
     this.name = name
-
     store.drivers.push(this)
   }
 
 }
 
 class Passenger {
-  constructor(name, driver) {
+  constructor(name) {
     this.id = ++passengerId
     this.name = name
-    if(driver) {
-      this.driverId = driver.id
-    }
     store.passengers.push(this)
-  }
-  setTrips(trips) {
-    this.tripId = trip.id
   }
   trips() {
     return store.trips.find(function(trip) {
@@ -38,19 +31,9 @@ class Passenger {
 class Trip {
   constructor(driver, passenger) {
     this.id = ++tripId
-    if(driver) {
-      this.driverId = driver.id
-    }
-    if(passenger) {
-      this.passengerId = passenger.id
-    }
-    store.trips.push(this)
-  }
-  setDriver(driver) {
     this.driverId = driver.id
-  }
-  setPassenger(passenger) {
     this.passengerId = passenger.id
+    store.trips.push(this)
   }
   driver() {
     return store.drivers.find(function(driver) {
